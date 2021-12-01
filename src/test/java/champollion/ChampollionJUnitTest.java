@@ -77,7 +77,7 @@ public class ChampollionJUnitTest {
         assertTrue(untel.enSousService());
 
         untel.ajouteIntervention(new Intervention(new Date(), 5, false, 9, TypeIntervention.TD, salle19,java, untel ));
-
+        
         assertFalse(untel.enSousService());
 
     }

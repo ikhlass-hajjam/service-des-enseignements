@@ -77,8 +77,12 @@ public class Enseignant extends Personne {
         for (Intervention inter : myInterventions){
             nbHeuresRealisees = nbHeuresRealisees + inter.dureeEquivalentTD();
         }
+        
+        System.out.println(nbHeuresPrevues);
+        System.out.println(nbHeuresRealisees);
 
-        return nbHeuresPrevues-nbHeuresRealisees > 0;
+
+        return nbHeuresPrevues-Math.round(nbHeuresRealisees) > 0;
 
     }
     
