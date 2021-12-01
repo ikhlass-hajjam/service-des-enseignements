@@ -20,7 +20,7 @@ public class Main {
                 bastide.getNom(), 
                 bastide.heuresPrevuesPourUE(uml),
                 uml.getIntitule()
-        );
+        );               
         
         
     }
